@@ -2,6 +2,8 @@
 
 This repository contains a PowerShell script that saves, inspects, and restores Windows startup-related settings for a reversible clean-boot profile.
 
+This is useful before installing software, changing drivers, or troubleshooting startup issues. You can later compare the saved snapshot with the current state to see what changed.
+
 ## What it does
 
 The script can:
@@ -63,7 +65,7 @@ powershell -ExecutionPolicy Bypass -File .\Manage-CleanBootStartup.ps1 -Action C
 
 ## Why this can be useful
 
-Saving a startup snapshot before installing software, changing drivers, or troubleshooting startup issues gives you a reliable baseline. Later, you can compare the saved snapshot with the current state to spot what changed, identify suspicious startup entries or services, and narrow down whether a recent change introduced a problem.
+Saving a startup snapshot before installing software, or troubleshooting startup issues gives you a reliable baseline. Later, you can compare the saved snapshot with the current state to spot what changed, identify suspicious startup entries or services, and narrow down whether a recent change introduced a problem.
 
 ## Requirements
 
